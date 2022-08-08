@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages of greg00
 
+![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
+
 You can use the [editor on GitHub](https://github.com/gregg00/gregg00.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -25,7 +27,6 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
