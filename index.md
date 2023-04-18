@@ -1,10 +1,11 @@
 ## Welcome to GitHub Pages of akademsubotnik
 
-![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
+#![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
 
 [//]: #(GREGADDEDSTART)
 
-Hi there 👋
+Hi there 👋 , welcome to akademsubotnik.github.io , this is a page that shows cleanup projects that have been done by the nonprofit akademsubotnik.
+Akademsubotnik is a group in Kiev City, Ukraine who volunteer to cleanup , repair and beautify the city of Kiev for everyone.  We are nonprofit registered in the country of Ukraine.  If you would like to join or assist with info, please reach out on telegram to, ggr2g +380975465994 .  We would be happy to hear from you.  Thank you.
 
 
 
