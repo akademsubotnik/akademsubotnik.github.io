@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages of akademsubotnik
+[//]: #WelcometoGitHubPagesofakademsubotnik
 
 ![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
 
