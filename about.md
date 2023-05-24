@@ -1,20 +1,6 @@
 ## Welcome to GitHub Pages of greg00
 
-![Shadow](/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg)
-
-[//]: #(GREGADDEDSTART)
-
-Hi there 👋
-- 🤹 Docker , Linux
-- 👨‍💻 I’m currently working on...TO DO
-- 🌱 I’m currently learning NIX, crypto
-- 🤩 Opensource software , Open hardware, Cryptosphere esp. BTC
-- 🗣️ English , Українська
-- 🔐 Add PGP Key
-- 📚 https://www.goodreads.com/user/show/125555581-greg
-- 📄🤩 https://bitcoinmagazine.com/culture/how-the-lighting-network-could-improve-encrypted-messaging , https://www.gnu.org/philosophy/free-hardware-designs.en.html
-- 
-
+Hi this is about me
 
 [//]: #(GREGADDEDEND)
 
