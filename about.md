@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages of greg00
+## About
 
 Hi this is about me
 
