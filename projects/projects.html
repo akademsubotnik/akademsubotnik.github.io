@@ -6,6 +6,14 @@
   <body>
     <a href="../index.html">Home</a> <a href="../about/about.html">About</a> <a href="projects.html">Projects</a> <a href="../portfolio/portfolio.html">CV</a>
     <p><a href="https://akademsubotnik.github.io/router-project/">Router Project</a> </p>
+    <p>A project that collects metrics on your network and populates them to grafana. It uses docker swarm.</p>
+    <p>How To:</p>
+      <ul>
+        <li>Create a docker swarm https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/</li>
+        <li>Deploy to docker swarm with a stack from compose file, in current directory, with $docker stack deploy --compose-file docker-compose.yml networkstack</li>
+        <li>Monitor $docker stack ls , $docker service ls $docker service logs $docker service scale ... etc.</li>
+      </ul>
+    <p><img src="/docs/assets/images/PHOTO-2022-08-05-21-39-53.jpg" alt="rpDiagram"></p>
     <p><a href="https://akademsubotnik.github.io/nixosconfiguration/">Nix Configuration Project</a> </p>
     <p><a href="https://akademsubotnik.github.io/codinggame/">Python Exercises Project</a> </p>
   </body>
