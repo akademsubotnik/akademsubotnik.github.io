@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: report
-          path: './report'            
+          path: 'workflows/report'            
           #name: report
           #path: './report'
           #budgetPath: ./budget.json # test performance budgets
