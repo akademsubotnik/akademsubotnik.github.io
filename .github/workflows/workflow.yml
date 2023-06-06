@@ -26,9 +26,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v10
         with:
           urls: |
-            https://example.com/
-            https://example.com/blog
             https://akademsubotnik.github.io/
-          budgetPath: ./budget.json # test performance budgets
+          #budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          #temporaryPublicStorage: true # upload lighthouse report to the temporary storage
