@@ -1,17 +1,34 @@
-name: Audit live site
-on: push
+#name: Audit live site
+#on: push
 
+#jobs:
+#  audit:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - name: Audit live URL
+#      uses: jakejarvis/lighthouse-action@master
+#      with:
+#        #url: 'https://jarv.is/'
+#        url: 'https://akademsubotnik.github.io/'
+#    - name: Upload results as an artifact
+#      uses: actions/upload-artifact@master
+#      with:
+#        name: report
+#        path: './report'
+name: Lighthouse CI
+on: push
 jobs:
-  audit:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
-    - name: Audit live URL
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        #url: 'https://jarv.is/'
-        url: 'https://akademsubotnik.github.io/'
-    - name: Upload results as an artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
+      - uses: actions/checkout@v3
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            https://example.com/
+            https://example.com/blog
+            https://akademsubotnik.github.io/
+          budgetPath: ./budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
