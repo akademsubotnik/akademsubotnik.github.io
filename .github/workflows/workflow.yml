@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./workflows
+        working-directory: ./reports
     steps:
       - uses: actions/checkout@v3
       - name: Audit URLs using Lighthouse
@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: report
-          path: 'workflows/report'            
+          path: 'reports/report'            
           #name: report
           #path: './report'
           #budgetPath: ./budget.json # test performance budgets
