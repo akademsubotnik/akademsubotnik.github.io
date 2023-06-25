@@ -25,7 +25,7 @@ jobs:
           echo "Files in directory?"
           ls -a
           
-          echo "Present working directory"
-          pwd
+          #echo "Present working directory"
+          #pwd
           
         
