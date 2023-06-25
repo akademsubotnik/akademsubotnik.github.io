@@ -1,20 +1,3 @@
-#name: Audit live site
-#on: push
-
-#jobs:
-#  audit:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - name: Audit live URL
-#      uses: jakejarvis/lighthouse-action@master
-#      with:
-#        #url: 'https://jarv.is/'
-#        url: 'https://akademsubotnik.github.io/'
-#    - name: Upload results as an artifact
-#      uses: actions/upload-artifact@master
-#      with:
-#        name: report
-#        path: './report'
 name: Lighthouse CI
 on: push
 jobs:
@@ -33,8 +16,8 @@ jobs:
       
       - name: List in current directory
         run:
-           echo What is in this directory?
-           ls -a
+         echo What is in this directory?
+         ls -a
             
       #- name: Upload results as an artifact
       #  uses: actions/upload-artifact@master
