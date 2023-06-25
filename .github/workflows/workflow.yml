@@ -20,9 +20,9 @@ on: push
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./reports
+    #defaults:
+      #run:
+      #  working-directory: ./reports
     steps:
       - uses: actions/checkout@v3
       - name: Audit URLs using Lighthouse
