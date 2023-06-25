@@ -13,8 +13,10 @@ jobs:
       
       - name: List files in current directory
         run: echo Hello, world!
+        shell: bash
       
       - name: Run a multi-line script
+        shell: bash
         run:
           echo What is in this directory?
           ls -a
