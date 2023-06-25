@@ -20,10 +20,10 @@ jobs:
             
       - name: List files in current directory
         run: 
-          echo Files in directory?
+          echo "Files in directory?"
           ls -a
-          echo
-          echo Present working directory
+          
+          echo "Present working directory"
           pwd
-          echo
+          
         
