@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
       - name: List files in current directory
         run: echo Hello, world!
@@ -21,4 +21,4 @@ jobs:
           echo What is in this directory?
           ls -a
           echo What is the current directory?
-          #pwd
+          pwd
