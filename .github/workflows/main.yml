@@ -5,18 +5,20 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  lighthouse:
+  #lighthouse:
+  build:
     runs-on: ubuntu-latest
-    #defaults:
-      #run:
-      #  working-directory: ./reports
+    defaults:
+      run:
+        #working-directory: ./reports
+        shell: bash -el {0}
     steps:
       - uses: actions/checkout@v2
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v10
-        with:
-          urls: |
-            https://akademsubotnik.github.io/
+      #- name: Audit URLs using Lighthouse
+       # uses: treosh/lighthouse-ci-action@v10
+       # with:
+       #   urls: |
+       #     https://akademsubotnik.github.io/
             
       - name: List files in current directory
         run: 
