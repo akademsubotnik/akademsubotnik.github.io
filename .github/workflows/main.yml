@@ -7,13 +7,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -el {0}
+    
     steps:
       - uses: actions/checkout@v2
+      
       - name: List files in current directory
-        run: 
-          echo Files in directory?
+        run: echo Hello, world!
+      
+      - name: Run a multi-line script
+        run:
+          echo What is in this directory?
           ls -a
-        
+          echo What is the current directory?
+          #pwd
