@@ -26,5 +26,5 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.11.x
-          LHCI_SERVER_BASE_URL=https://example.com lhci upload
+          # LHCI_SERVER_BASE_URL=https://example.com lhci upload
           lhci autorun
