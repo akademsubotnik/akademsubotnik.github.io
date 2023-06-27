@@ -27,3 +27,7 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.11.x
           lhci autorun
+    
+      - name: Get information about environment
+        shell: bash
+        run: sh ./gha-script.sh 
