@@ -27,6 +27,18 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.11.x
           lhci autorun
+      
+      - name: Setup a Cache for lighthouse
+        uses: actions/cache@v1.2.1
+        with:
+        # A directory to store and save the cache
+          path: ~/.lhcache
+        # An explicit key for restoring and saving the cache
+          key: TST
+          restore-keys: TST
+          
+          
+      
     
       - name: Get information about environment
         shell: bash
