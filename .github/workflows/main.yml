@@ -1,13 +1,20 @@
 name: CI
 on: [push]
 jobs:
-  lighthouseci:
+  lhci:
+    name: Lighthouse
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - run: npm install && npm install -g @lhci/cli@0.11.x
-      - run: npm run build
-      - run: lhci autorun
+          node-version: 16.x
+      - name: npm install, build
+        run: |
+          npm install
+          npm run build
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.11.x
+          lhci autorun
