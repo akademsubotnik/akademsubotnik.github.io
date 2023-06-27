@@ -21,14 +21,12 @@ jobs:
         run: echo Hello, world!
         shell: bash
       
-      - name: Run a multi-line script
+      - name: Get information about environment
         shell: bash
         run: sh ./gha-script.sh 
   
-
-  lighthouseci:
-    runs-on: ubuntu-latest
-    steps:
+      - name: ligthhouseci
+        shell: bash
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -38,3 +36,14 @@ jobs:
           npm run build
           lhci autorun
 
+#  lighthouseci:
+#    runs-on: ubuntu-latest
+#    steps:
+#     - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
+#      - run: |
+#          npm install && npm install -g @lhci/cli@0.11.x
+#          npm run build
+#          lhci autorun
