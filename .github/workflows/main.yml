@@ -1,5 +1,12 @@
 name: CI
-on: [push]
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+#on: [push]
+
+
 jobs:
   lhci:
     name: Lighthouse
