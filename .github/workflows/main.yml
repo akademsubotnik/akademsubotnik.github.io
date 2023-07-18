@@ -27,21 +27,31 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.11.x
           lhci autorun
+
+
+  build-on-updatereadme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       
       #IMPLEMENT THE CACHE PROPERLY!!!!!!!!
-      - name: Setup a Cache for lighthouse
-        uses: actions/cache@v1.2.1
-        with:
+      #- name: Setup a Cache for lighthouse
+      #  uses: actions/cache@v1.2.1
+      #  with:
         # A directory to store and save the cache
-          path: ~/.lhcache
+      #    path: ~/.lhcache
         # An explicit key for restoring and saving the cache
-          key: TST
-          restore-keys: TST
+      #    key: TST
+       #   restore-keys: TST
           
           
       
     
-      - name: Get information about environment
-        shell: bash
-        run: sh ./gha-script.sh 
+    #  - name: Get information about environment
+     #   shell: bash
+      #  run: sh ./gha-script.sh 
