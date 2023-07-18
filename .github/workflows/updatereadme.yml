@@ -16,3 +16,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           TARGET_FILE: 'about/about.html'
+          COMMIT_MSG: '⚡Recent github activity updates' 
