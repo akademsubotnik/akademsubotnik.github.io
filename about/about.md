@@ -1,3 +1,12 @@
+<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+<!-- Load the element definition -->
+<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
+<!-- Simply set the `src` attribute to your MD file and win -->
+<zero-md src="about.md"></zero-md>
+
 About [Home](../index.html) [About](about.md) [Projects](../projects/projects.html) [CV](../portfolio/portfolio.html)
 
 ![gregzaporozye](/docs/assets/images/photo_5460658713791680008_c.jpg)
