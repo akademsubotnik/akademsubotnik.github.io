@@ -15,5 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          TARGET_FILE: 'about/about.html'
+          TARGET_FILE: 'about/about.md'
           COMMIT_MSG: '⚡Recent github activity updates' 
